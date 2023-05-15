@@ -13,7 +13,7 @@ public class AutoCreateConfig {
 
 	@Bean
 	public NewTopic libraryEvents() {
-		return TopicBuilder.name("library-events").partitions(1).replicas(1).build();
+		return TopicBuilder.name("library-events").partitions(2).replicas(2).build();
 	}
 
 }
